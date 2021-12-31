@@ -1,0 +1,13 @@
+*.pyc
+dist
+bin
+eggs
+lib
+*.egg-info
+build
+.idea/*
+.DS_Store
+.python-version
+.mypy_cache/
+__pycache__/
+venv/*
