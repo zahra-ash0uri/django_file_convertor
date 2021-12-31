@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from .views import login, sign_up
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('video-convertor/', include('video_convertor.urls'))
+    path('video-convertor/', include('video_convertor.urls')),
+    path('account/create/', sign_up),
+    path('account/login/', login),
 ]
